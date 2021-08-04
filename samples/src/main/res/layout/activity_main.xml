@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="56dp">
+
+    <TextView
+        android:id="@+id/statusOfKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/keyboard_is_close"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:hint="@string/input_something"
+        android:importantForAutofill="no"
+        android:inputType="textAutoComplete"
+        android:lines="1"
+        android:padding="8dp"
+        android:textSize="18sp"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/closeKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/close_keyboard" />
+
+</LinearLayout>

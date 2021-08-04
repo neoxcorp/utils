@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">utils neoxcorp</string>
+
+    <string name="keyboard_is_open">Keyboard is OPEN</string>
+    <string name="keyboard_is_close">Keyboard is CLOSE</string>
+    <string name="input_something">Input somethings</string>
+    <string name="close_keyboard">Close keyboard</string>
+</resources>
