@@ -5,4 +5,7 @@
     <string name="keyboard_is_close">Keyboard is CLOSE</string>
     <string name="input_something">Input somethings</string>
     <string name="close_keyboard">Close keyboard</string>
+
+    <string name="scale_up">Scale UP</string>
+    <string name="scale_down">Scale Down</string>
 </resources>

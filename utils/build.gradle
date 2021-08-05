@@ -34,7 +34,7 @@ project.afterEvaluate {
                 from components.release
                 groupId = 'com.github.neoxcorp'
                 artifactId = 'utils'
-                version = '0.0.1-alpha02'
+                version = '0.0.1-alpha03'
             }
         }
     }

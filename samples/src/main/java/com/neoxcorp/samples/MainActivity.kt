@@ -2,15 +2,22 @@ package com.neoxcorp.samples
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.github.neoxcorp.utils.keyboard.extensions.keyboardListener
+import com.github.neoxcorp.utils.keyboard.extensions.scaleDown
+import com.github.neoxcorp.utils.keyboard.extensions.scaleUp
 import com.github.neoxcorp.utils.keyboard.util.UIUtil
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
     private var statusOfKeyboard: TextView? = null
     private var closeKeyboard: Button? = null
+    private var scaleUpButton: FloatingActionButton? = null
+    private var scaleDownButton: FloatingActionButton? = null
+    private var scalableImage: ImageView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         setupButtons()
         setupKeyboard()
+        setupScaleButtons()
     }
 
     private fun setupButtons() {
@@ -40,5 +48,14 @@ class MainActivity : AppCompatActivity() {
                 }
             )
         }
+    }
+
+    private fun setupScaleButtons() {
+        scaleUpButton = findViewById(R.id.scaleUpButton)
+        scaleDownButton = findViewById(R.id.scaleDownButton)
+        scalableImage = findViewById(R.id.scalableImage)
+
+        scaleUpButton?.setOnClickListener { scalableImage.scaleUp() }
+        scaleDownButton?.setOnClickListener { scalableImage.scaleDown() }
     }
 }
