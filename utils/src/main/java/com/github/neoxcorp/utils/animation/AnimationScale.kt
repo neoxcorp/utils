@@ -1,4 +1,4 @@
-package com.github.neoxcorp.utils.keyboard.extensions
+package com.github.neoxcorp.utils.animation
 
 import android.animation.Animator
 import android.animation.ObjectAnimator

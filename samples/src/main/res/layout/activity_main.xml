@@ -72,4 +72,46 @@
 
     </LinearLayout>
 
+    <FrameLayout
+        android:id="@+id/moveContainer"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/moveUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:src="@android:drawable/arrow_up_float"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/moveDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:src="@android:drawable/arrow_down_float"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/moveRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:rotation="-90"
+            android:src="@android:drawable/arrow_down_float"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/moveLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:rotation="90"
+            android:src="@android:drawable/arrow_down_float"
+            app:fabSize="normal" />
+
+    </FrameLayout>
+
 </LinearLayout>
